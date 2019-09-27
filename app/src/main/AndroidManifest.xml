@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:dist="http://schemas.android.com/apk/distribution"
+        package="techguy.webviewapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGEE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+            android:allowBackup="false"
+            android:icon="@mipmap/logo"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppSplashTheme">
+        <activity android:name=".Error404"></activity>
+
+        <meta-data
+                android:name="com.bugsnag.android.API_KEY"
+                android:value="66aaa2a0642e81ea3bbc26a562381ec0" />
+
+        <activity
+                android:name=".Splash"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:host="tecksol.co.ke"
+                        android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".MainPage"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppSplashTheme" />
+    </application>
+
+</manifest>
