@@ -1,5 +1,5 @@
 package techguy.webviewapp;
 
 class Url {
-    String appUrl = "https://tecksol.co.ke/";
+    String appUrl = "https://shiftechafrica.com/";
 }
