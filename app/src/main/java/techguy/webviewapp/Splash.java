@@ -26,13 +26,14 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bugsnag.init(this);
+        Bugsnag.start(this);
         setContentView(R.layout.activity_splash);
 
         imageView = findViewById(R.id.splash_image);
         slogan = findViewById(R.id.slogan);
         companyName = findViewById(R.id.companyName);
-        url = findViewById(R.id.url); ProgressBar spinner = findViewById(R.id.progressBar);
+        url = findViewById(R.id.url);
+        ProgressBar spinner = findViewById(R.id.progressBar);
 
         //set color to progressbar
         spinner.getIndeterminateDrawable().setColorFilter(Color.parseColor("#f5e6e8"), android.graphics.PorterDuff.Mode.MULTIPLY);

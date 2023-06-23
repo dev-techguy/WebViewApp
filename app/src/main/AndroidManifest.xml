@@ -20,11 +20,12 @@
         <activity android:name=".Error404"></activity>
 
         <meta-data
-                android:name="com.bugsnag.android.API_KEY"
-                android:value="66aaa2a0642e81ea3bbc26a562381ec0" />
+            android:name="com.bugsnag.android.API_KEY"
+            android:value="dfdedcf2a5814eff704b71443e02a6cd"/>
 
         <activity
-                android:name=".Splash"
+            android:exported="true"
+            android:name=".Splash"
                 android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
